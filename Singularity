@@ -28,4 +28,3 @@ cd /opt && \
     rm -f Montage_v5.0.tar.gz && \
     cd Montage && \
     make
-
