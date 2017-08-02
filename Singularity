@@ -11,16 +11,16 @@ yum groupinstall -y \
 
 yum install -y \
     curl \
-    gcc-gfortran \ 
+    gcc-gfortran \
     pkg-config \
-    python \
-    python-astropy \
-    python-devel \
+    python2 \
+    python2-astropy \
+    python2-devel \
     unzip \
     vim \
     wget
 
-yum clean all    
+yum clean all
 
 cd /opt && \
     wget -nv http://montage.ipac.caltech.edu/download/Montage_v5.0.tar.gz && \
@@ -28,3 +28,4 @@ cd /opt && \
     rm -f Montage_v5.0.tar.gz && \
     cd Montage && \
     make
+
