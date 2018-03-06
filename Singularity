@@ -23,9 +23,10 @@ yum install -y \
 yum clean all
 
 cd /opt && \
-    wget -nv http://montage.ipac.caltech.edu/download/Montage_v5.0.tar.gz && \
-    tar xzf Montage_v5.0.tar.gz && \
-    rm -f Montage_v5.0.tar.gz && \
+    wget -nv https://github.com/Caltech-IPAC/Montage/archive/dev.zip && \
+    unzip dev.zip && \
+    rm -f dev.zip && \
+    mv Montage-dev Montage && \
     cd Montage && \
     make
 
